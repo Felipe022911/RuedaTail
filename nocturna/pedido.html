@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pedido | HIDE MEAL · AROUND THE EXPERIENCE</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-carbon text-crema min-h-screen flex flex-col justify-between selection:bg-ladrillo selection:text-crema">
+
+    <!-- Header con navegación de retorno -->
+    <header class="border-b border-ladrillo/30 bg-carbon/95 py-5 px-6">
+        <div class="max-w-4xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex flex-col hover:opacity-90 transition-opacity">
+                <span class="font-heading text-xl font-bold tracking-widest text-crema flex items-center gap-2 hover:text-turquesa transition-colors">
+                    <span class="text-naranja">✦</span> HIDE MEAL
+                </span>
+                <span class="text-[9px] tracking-[0.2em] text-turquesa font-semibold uppercase">Checkout Privado</span>
+            </a>
+            
+            <div class="flex items-center gap-4">
+                <a href="index.html" class="text-xs text-crema/80 hover:text-turquesa transition-colors font-medium flex items-center gap-1">← Volver al Inicio</a>
+                <span class="hidden sm:inline-block text-xs text-mostaza bg-ladrillo/30 border border-ladrillo/50 px-3 py-1 rounded-full font-semibold uppercase tracking-wider">🔒 Conexión Clandestina Encriptada</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 w-full space-y-8">
+        
+        <div class="space-y-2 border-b border-ladrillo/30 pb-6">
+            <span class="text-xs uppercase tracking-[0.3em] text-turquesa font-bold">Reserva de Experiencia</span>
+            <h1 class="font-heading text-3xl sm:text-4xl font-extrabold text-crema">Configura tu Orden HIDE MEAL</h1>
+            <p class="text-crema/70 text-sm font-light">Selecciona la experiencia culinaria de tu preferencia, indica las cantidades y completa los detalles de entrega.</p>
+        </div>
+
+        <form class="space-y-8">
+            
+            <!-- 01. SELECCIÓN DE PLATOS Y CANTIDADES -->
+            <div class="bg-carbon border border-ladrillo/30 p-6 sm:p-8 rounded-2xl space-y-6">
+                <h3 class="font-heading text-xl font-bold text-crema flex items-center gap-2">
+                    <span class="text-naranja">01.</span> Selección de Experiencia Clandestina
+                </h3>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 items-end">
+                    <div class="sm:col-span-8 space-y-2">
+                        <label class="block text-xs font-semibold text-crema/80">Elige tu Plato de Autor</label>
+                        <select class="w-full bg-carbon border border-ladrillo/40 rounded-xl px-4 py-3 text-sm text-crema focus:outline-none focus:border-turquesa transition-all cursor-pointer">
+                            <option value="" disabled selected>Selecciona una experiencia...</option>
+                            <option value="1">Hamburguesa Trufada Secreta — $28.900</option>
+                            <option value="2">Pizza Napolitana Clandestina — $42.000</option>
+                            <option value="3">Alitas BBQ al Whisky Ahumado — $32.500</option>
+                            <option value="4">Omakase Roll Box (16 Pzas) — $48.000</option>
+                            <option value="5">Tacos de Birria Res Gourmet — $26.000</option>
+                            <option value="6">Bowl Silvestre & Pollo Orgánico — $26.500</option>
+                            <option value="7">Waffles Artesanales & Red Fruits — $18.900</option>
+                            <option value="8">Costillas St. Louis Ahumadas (500g) — $49.900</option>
+                            <option value="9">Fettuccine Alfredo con Camarones — $33.000</option>
+                            <option value="10">Ramen Tonkotsu Secreto — $36.000</option>
+                            <option value="11">Sandwich Brioche Pastrami — $24.000</option>
+                            <option value="12">Ensalada César Ahumada — $23.500</option>
+                            <option value="13">Gyozas de Cerdo & Jengibre (8 Pzas) — $19.900</option>
+                            <option value="14">Brownie Lava de Chocolate 70% — $15.500</option>
+                            <option value="15">Crepe Serrano, Brie & Trufa — $27.000</option>
+                            <option value="16">Poke Bowl Salmón & Mango — $38.900</option>
+                        </select>
+                    </div>
+
+                    <div class="sm:col-span-4 space-y-2">
+                        <label class="block text-xs font-semibold text-crema/80">Cantidad</label>
+                        <input type="number" min="1" value="1" class="w-full bg-carbon border border-ladrillo/40 rounded-xl px-4 py-3 text-sm text-crema focus:outline-none focus:border-turquesa transition-all text-center font-bold text-mostaza">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 02. INFORMACIÓN DEL COMENSAL -->
+            <div class="bg-carbon border border-ladrillo/30 p-6 sm:p-8 rounded-2xl space-y-6">
+                <h3 class="font-heading text-xl font-bold text-crema flex items-center gap-2">
+                    <span class="text-naranja">02.</span> Información del Comensal
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-crema/80 mb-1">Nombre Completo</label>
+                        <input type="text" placeholder="Ej: Mateo Valencia" class="w-full bg-carbon border border-ladrillo/40 rounded-xl px-4 py-3 text-sm text-crema placeholder:text-crema/40 focus:outline-none focus:border-turquesa transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-crema/80 mb-1">Teléfono Secreto</label>
+                        <input type="tel" placeholder="+57 300 000 0000" class="w-full bg-carbon border border-ladrillo/40 rounded-xl px-4 py-3 text-sm text-crema placeholder:text-crema/40 focus:outline-none focus:border-turquesa transition-all">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 03. DIRECCIÓN DE LA EXPERIENCIA -->
+            <div class="bg-carbon border border-ladrillo/30 p-6 sm:p-8 rounded-2xl space-y-6">
+                <h3 class="font-heading text-xl font-bold text-crema flex items-center gap-2">
+                    <span class="text-naranja">03.</span> Dirección de la Experiencia
+                </h3>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-crema/80 mb-1">Dirección Exacta (Residencia / Lugar)</label>
+                        <input type="text" placeholder="Carrera 43A # 1-50, Apto 802" class="w-full bg-carbon border border-ladrillo/40 rounded-xl px-4 py-3 text-sm text-crema placeholder:text-crema/40 focus:outline-none focus:border-turquesa transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-crema/80 mb-1">Notas Especiales o Alergias</label>
+                        <textarea rows="2" placeholder="Ej: Sin cebolla en la salsa, timbre fuera de servicio..." class="w-full bg-carbon border border-ladrillo/40 rounded-xl px-4 py-3 text-sm text-crema placeholder:text-crema/40 focus:outline-none focus:border-turquesa transition-all"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 04. MÉTODO DE PAGO -->
+            <div class="bg-carbon border border-ladrillo/30 p-6 sm:p-8 rounded-2xl space-y-6">
+                <h3 class="font-heading text-xl font-bold text-crema flex items-center gap-2">
+                    <span class="text-naranja">04.</span> Método de Pago
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <label class="flex items-center gap-3 bg-carbon border border-ladrillo/50 p-4 rounded-xl cursor-pointer hover:border-turquesa transition-all">
+                        <input type="radio" name="pago" checked class="accent-naranja">
+                        <span class="text-xs font-medium text-crema">Tarjeta de Crédito / Débito / PSE</span>
+                    </label>
+                    <label class="flex items-center gap-3 bg-carbon border border-ladrillo/50 p-4 rounded-xl cursor-pointer hover:border-turquesa transition-all">
+                        <input type="radio" name="pago" class="accent-naranja">
+                        <span class="text-xs font-medium text-crema">Efectivo contra entrega</span>
+                    </label>
+                </div>
+            </div>
+
+            <button type="button" onclick="alert('¡Tu pedido HIDE MEAL ha sido registrado con éxito! Pronto recibirás una notificación secreta de confirmación.')" class="w-full bg-naranja hover:bg-ladrillo text-crema font-extrabold py-4 rounded-xl shadow-xl transition-all duration-300 text-sm tracking-widest uppercase cursor-pointer">
+                Confirmar & Enviar Pedido
+            </button>
+
+        </form>
+
+    </main>
+
+    <footer class="border-t border-ladrillo/30 bg-black/40 py-6 text-center text-xs text-crema/60">
+        HIDE MEAL · AROUND THE EXPERIENCE © 2026. Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
